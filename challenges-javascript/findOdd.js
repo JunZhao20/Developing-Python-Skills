@@ -1,5 +1,5 @@
 function findOdd(A) {
-  // expand values in set obj into a list
+  // UPDATE try adding count to obj
   let count = 0;
   const u = [...new Set(A)];
   const obj = new Set(A);
