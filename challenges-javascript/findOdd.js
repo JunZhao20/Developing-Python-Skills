@@ -7,7 +7,6 @@ function findOdd(A) {
   for (let i = 0; i < u.length; i++) {
     let n = u[i];
     if (u.includes(n)) {
-      obj(count++;
     }
     console.log(obj);
   }
