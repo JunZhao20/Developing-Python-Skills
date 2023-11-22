@@ -1,10 +1,13 @@
 function findOdd(A) {
-  // UPDATE try adding count to obj
-  let count = 0;
-  const u = [...new Set(A)];
-  // const obj = new Set(A);
-  for (let i = 0; i < A.length; i++) {
-    if (A.includes(A[i])) {
+  // expand values in set obj into a list
+  const find = {};
+  A.forEach((x) => {
+    find[x] = (find[x] || 0) + 1;
+  });
+
+  for (const key in find) {
+    if (find[key] % 2 !== 0) {
+      return parseInt(key);
     }
   }
 }
